@@ -6,7 +6,7 @@
 require('dotenv').load();
 
 
-var app = require('../app');
+var app = require('./app');
 var http = require('http');
 const mongoConnect = require('./mongo.connect').connect;
 
