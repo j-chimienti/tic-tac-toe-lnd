@@ -60,6 +60,11 @@ app.get('/order/:id', async (req, res, next) => {
         return false;
     });
 
+    if (!order) {
+
+        console.error('error yo', order);
+    }
+
     let status = order ? order.status : 'pending';
 
     res.render('order', {status, orderId: id, order});
@@ -79,11 +84,6 @@ app.post('/notifications/:id', async (req, res, next) => {
         console.error(err);
         return false;
     });
-
-    console.log('io', global.io);
-
-    global.io.to(id).emit('ORDER_SUCCESS', o);
-
 
     res.sendStatus(200);
 });
