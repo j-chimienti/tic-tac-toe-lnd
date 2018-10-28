@@ -70,7 +70,7 @@ app.get('/order/:id', async (req, res, next) => {
     }
 
 
-    else res.render('order', {status: order.status, orderId: id, order});
+    else res.render('order', {status: 'pending', orderId: id, order});
 
 });
 
