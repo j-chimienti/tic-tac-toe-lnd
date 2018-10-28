@@ -59,12 +59,12 @@ app.get('/order/:id', async (req, res, next) => {
     const order = await orderController.getOrder(id).catch(err => {
 
         console.error(err);
-        return false;
+        return {status: false};
     });
 
     // fixme userid
     // todo add ttl mongo
-    if (order && order.hasOwnProperty('status') && order.status) {
+    if (order && order.status) {
 
         res.sendFile(path.join(__dirname, 'public', 'ttt.html'));
     }

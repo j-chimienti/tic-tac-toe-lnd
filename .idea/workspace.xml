@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="642341c1-e3a4-48da-8c76-9c0f26e667fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/ttt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.0435edba.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/main.0435edba.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.0435edba.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/main.0435edba.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.1c4ec0fb.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/js/main.1c4ec0fb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.1c4ec0fb.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/js/main.1c4ec0fb.js.map" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,7 +31,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Dockerfile" value="3" />
-          <entry key="css" value="7" />
+          <entry key="css" value="8" />
           <entry key="env" value="7" />
           <entry key="gitignore" value="1" />
           <entry key="hbs" value="35" />
@@ -55,7 +46,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="7" />
+          <entry key="CSS" value="8" />
           <entry key="Dockerfile" value="3" />
           <entry key="HTML" value="2" />
           <entry key="Handlebars/Mustache" value="35" />
@@ -75,7 +66,7 @@
           <entry key="gitignore" value="6" />
           <entry key="hbs" value="1463" />
           <entry key="html" value="24" />
-          <entry key="js" value="4344" />
+          <entry key="js" value="4419" />
           <entry key="json" value="37" />
           <entry key="md" value="180" />
           <entry key="yml" value="196" />
@@ -88,7 +79,7 @@
           <entry key="HTML" value="24" />
           <entry key="Handlebars/Mustache" value="1463" />
           <entry key="JSON" value="37" />
-          <entry key="JavaScript" value="4344" />
+          <entry key="JavaScript" value="4419" />
           <entry key="Markdown" value="180" />
           <entry key="PLAIN_TEXT" value="20" />
           <entry key="YAML" value="196" />
@@ -103,17 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="67" column="56" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/ttt.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+            <state relative-caret-position="298">
+              <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -178,6 +160,7 @@
         <option value="$PROJECT_DIR$/www.js" />
         <option value="$PROJECT_DIR$/order.controller.js" />
         <option value="$PROJECT_DIR$/build/index.html" />
+        <option value="$PROJECT_DIR$/public/ttt.html" />
         <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
@@ -216,6 +199,11 @@
             <path>
               <item name="btc-store" type="b2602c69:ProjectViewProjectNode" />
               <item name="btc-store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="btc-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="btc-store" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -318,18 +306,18 @@
       <workItem from="1540669181918" duration="6273000" />
       <workItem from="1540698312460" duration="10609000" />
       <workItem from="1540737483154" duration="506000" />
-      <workItem from="1540738152488" duration="9460000" />
+      <workItem from="1540738152488" duration="9685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48060000" />
+    <option name="totallyTimeSpent" value="48285000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="23" width="1231" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23380992" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.23380992" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -345,7 +333,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Terminal" order="3" weight="0.3566022" />
+      <window_info active="true" anchor="right" id="Terminal" order="3" visible="true" weight="0.3566022" />
       <window_info anchor="right" id="Debug" order="4" weight="0.36333054" />
     </layout>
   </component>
@@ -360,17 +348,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>89</line>
+          <line>90</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>79</line>
+          <line>80</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>71</line>
+          <line>72</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -416,13 +404,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/btc.svg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="86" selection-start-line="4" selection-start-column="86" selection-end-line="4" selection-end-column="86" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notifications/notifications.router.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/express-session/README.md">
@@ -517,17 +498,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="86" selection-start-line="4" selection-start-column="86" selection-end-line="4" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/ttt.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+        <state relative-caret-position="253">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="67" column="56" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
+        <state relative-caret-position="298">
+          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
         </state>
       </provider>
     </entry>
