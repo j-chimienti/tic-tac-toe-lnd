@@ -120,19 +120,6 @@ async function main() {
 
     io.on('connection', (socket) => {
 
-        socket.on('INIT_ORDER', id => {
-
-            console.log('init');
-            console.log(socket.id);
-            socket.join(id);
-            console.log(socket.id);
-
-            socket.id = id;
-
-            console.log(socket.id);
-
-        });
-
         socket.on('GET_INVOICE_DATA', async id => {
 
             const order = await orderController.getOrder(id);
