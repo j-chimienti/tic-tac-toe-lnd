@@ -10,6 +10,8 @@ var parseurl = require('parseurl');
 const session = require('express-session');
 const fs = require('fs');
 
+const orderController = require('./order.controller');
+
 
 var app = express();
 const http = require('http').Server(app);
@@ -23,7 +25,7 @@ app.use(session({
     secret: 'keyboard cat',
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: true }
+    cookie: {secure: true}
 }));
 
 app.use(logger('dev'));
@@ -49,32 +51,31 @@ app.get('/', (req, res) => {
 
 });
 
-app.get('/order/:id', (req, res, next) => {
+app.get('/order/:id', async (req, res, next) => {
 
     const {id} = req.params;
 
-    const {result: {status = 'incomplete'}} = req.session;
 
-    console.log('session', req.session);
-    res.render('order', {status, orderId: id, result: req.session.result});
+    const order = await orderController.getOrder(id);
+
+    console.log('order', order);
+
+    res.render('order', {status, orderId: id, order});
 
 });
 
-app.post('/notifications/:id', (req, res, next) => {
-
+app.post('/notifications/:id', async (req, res, next) => {
 
 
     const {id} = req.params;
     console.log('status', req.body.status);
-    console.log('session', req.session);
+
+    const result = await orderController.upsert(req.body);
 
     req.session.result = req.body;
 
-
     res.sendStatus(200);
 });
-
-
 
 
 io.on('connection', onConnection);
@@ -101,15 +102,12 @@ http.listen(port, () => console.log('listening on port ' + port));
 module.exports = app;
 
 
-
 function onConnection(socket) {
 
     socket.on('initOrder', (orderId) => {
 
         socket.join(orderId);
     });
-
-
 
 
 }
