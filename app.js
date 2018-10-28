@@ -76,6 +76,8 @@ app.post('/notifications/:id', async (req, res, next) => {
     console.log('status', req.body.status);
 
     const result = await orderController.upsert(req.body).catch(err => {
+
+        console.error(err);
         return false;
     });
 

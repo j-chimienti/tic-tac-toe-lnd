@@ -20,6 +20,6 @@ module.exports = {
 
         return await global.db
             .collection('orders')
-            .updateOne({id: order.id}, order, {upsert: true});
+            .update({id: order.id}, order, {upsert: true});
     }
 };
