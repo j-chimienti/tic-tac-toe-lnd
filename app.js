@@ -5,17 +5,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var sassMiddleware = require('node-sass-middleware');
-const port = process.env.PORT || 3000;
-var parseurl = require('parseurl');
 const session = require('express-session');
-const fs = require('fs');
 
 const orderController = require('./order.controller');
 
 
 var app = express();
-const http = require('http').Server(app);
-const io = require('socket.io')(http);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -95,25 +90,7 @@ app.use(function (err, req, res, next) {
     res.render('error');
 });
 
-http.listen(port, () => console.log('listening on port ' + port));
 
 module.exports = app;
 
 
-function onConnection(socket) {
-
-    socket.on('initOrder', (orderId) => {
-
-        socket.join(orderId);
-    });
-
-
-}
-
-
-function uuidv4() {
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-        var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
-        return v.toString(16);
-    });
-}
