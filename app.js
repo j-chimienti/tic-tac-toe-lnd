@@ -7,6 +7,7 @@ var logger = require('morgan');
 var sassMiddleware = require('node-sass-middleware');
 const port = process.env.PORT || 3000;
 var parseurl = require('parseurl');
+const session = require('express-session');
 const fs = require('fs');
 
 
@@ -18,6 +19,12 @@ const io = require('socket.io')(http);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
+app.use(session({
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: true }
+}));
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -35,7 +42,7 @@ const appId = process.env.appId;
 
 app.get('/', (req, res) => {
 
-    const orderId = uuidv4();
+    const orderId = req.session.id;
     res.locals.orderId = orderId;
     res.locals.appId = appId;
     res.render('index');
@@ -44,18 +51,21 @@ app.get('/', (req, res) => {
 
 app.get('/order/:id', (req, res, next) => {
 
-    const {id} = req.params;
-    res.render('order', {orderId: id, status: 'pending'});
+    const {result: {status = 'incomplete'}} = req.session;
+
+    res.render('order', {status, orderId});
 
 });
 
 app.post('/notifications/:id', (req, res, next) => {
 
-    const {id} = req.params;
 
+
+    const {id} = req.params;
     console.log('status', req.body.status);
 
-    io.to(id).emit('orderSuccess', {result: req.body});
+    req.session.result = req.body;
+
     res.sendStatus(200);
 });
 
@@ -93,6 +103,8 @@ function onConnection(socket) {
 
         socket.join(orderId);
     });
+
+
 
 
 }
