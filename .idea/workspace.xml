@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="642341c1-e3a4-48da-8c76-9c0f26e667fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/order.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/order.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/order.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www.js" beforeDir="false" afterPath="$PROJECT_DIR$/www.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -73,7 +67,7 @@
           <entry key="gitignore" value="6" />
           <entry key="hbs" value="1414" />
           <entry key="html" value="5" />
-          <entry key="js" value="3567" />
+          <entry key="js" value="3646" />
           <entry key="json" value="37" />
           <entry key="md" value="180" />
           <entry key="yml" value="196" />
@@ -86,7 +80,7 @@
           <entry key="HTML" value="5" />
           <entry key="Handlebars/Mustache" value="1414" />
           <entry key="JSON" value="37" />
-          <entry key="JavaScript" value="3567" />
+          <entry key="JavaScript" value="3646" />
           <entry key="Markdown" value="180" />
           <entry key="PLAIN_TEXT" value="20" />
           <entry key="YAML" value="196" />
@@ -97,14 +91,14 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.44070646">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="157">
-                  <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+                <state relative-caret-position="270">
+                  <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -161,8 +155,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="101">
-                  <caret line="8" column="27" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="27" />
+                <state relative-caret-position="107">
+                  <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
                 </state>
               </provider>
             </entry>
@@ -216,8 +210,8 @@
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/order.controller.js" />
         <option value="$PROJECT_DIR$/views/order.hbs" />
-        <option value="$PROJECT_DIR$/public/main.js" />
         <option value="$PROJECT_DIR$/www.js" />
+        <option value="$PROJECT_DIR$/public/main.js" />
         <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
@@ -355,12 +349,12 @@
       <workItem from="1540669181918" duration="6273000" />
       <workItem from="1540698312460" duration="10609000" />
       <workItem from="1540737483154" duration="506000" />
-      <workItem from="1540738152488" duration="5816000" />
+      <workItem from="1540738152488" duration="5962000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44416000" />
+    <option name="totallyTimeSpent" value="44562000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="23" width="1231" height="777" extended-state="0" />
@@ -553,8 +547,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+        <state relative-caret-position="270">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
         </state>
       </provider>
     </entry>

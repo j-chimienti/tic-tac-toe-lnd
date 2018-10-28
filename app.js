@@ -20,7 +20,7 @@ app.set('view engine', 'hbs');
 const MongoStore = require('connect-mongo')(session);
 
 app.use(session({
-    store: new MongoStore({ db: process.env.MONGO_URI }),
+    store: new MongoStore({ url: process.env.MONGO_URI }),
     secret: 'testing app',
     resave: false,
     saveUninitialized: true,

@@ -8,24 +8,22 @@
     const {value} = orderId;
     socket.emit('INIT_ORDER', value);
 
-    socket.on('ORDER_SUCCESS', result => {
-        display.innerText = JSON.stringify(result);
-        status.value = result.status;
-        status.classList.add('text-success');
-    });
+    socket.on('ORDER_SUCCESS', handleInvoice);
 
     function getInvoice() {
         socket.emit('GET_INVOICE_DATA', orderId.value);
 
     }
 
-    socket.on('INVOICE_DATA', result => {
+    socket.on('INVOICE_DATA', handleInvoice);
+
+
+    function handleInvoice(result) {
 
         display.innerText = JSON.stringify(result);
         status.value = result.status;
         status.classList.add(result.status === 'paid' ? 'text-success' : 'text-info');
-    });
-
+    }
 
     setInterval(() => getInvoice(), 1000 * 10);
     getInvoice();
