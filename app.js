@@ -52,7 +52,6 @@ app.get('/', (req, res) => {
 
 });
 
-app.use('/order/:id', express.static(path.join(__dirname, 'build')));
 
 app.get('/order/:id', async (req, res, next) => {
 
@@ -66,7 +65,7 @@ app.get('/order/:id', async (req, res, next) => {
     if (order && order.status) {
 
 
-        res.sendFile(path.join(__dirname, 'build', 'index.html'));
+        res.sendFile(path.join(__dirname, 'public', 'ttt.html'));
     }
 
 
