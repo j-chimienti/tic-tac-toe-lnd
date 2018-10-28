@@ -51,9 +51,11 @@ app.get('/', (req, res) => {
 
 app.get('/order/:id', (req, res, next) => {
 
+    const {id} = req.params;
+
     const {result: {status = 'incomplete'}} = req.session;
 
-    res.render('order', {status, orderId});
+    res.render('order', {status, orderId: id, result: req.session.result});
 
 });
 
