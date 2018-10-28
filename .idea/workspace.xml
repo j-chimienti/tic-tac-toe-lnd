@@ -66,7 +66,7 @@
           <entry key="gitignore" value="6" />
           <entry key="hbs" value="1572" />
           <entry key="html" value="24" />
-          <entry key="js" value="4829" />
+          <entry key="js" value="4838" />
           <entry key="json" value="37" />
           <entry key="md" value="180" />
           <entry key="yml" value="196" />
@@ -79,7 +79,7 @@
           <entry key="HTML" value="24" />
           <entry key="Handlebars/Mustache" value="1572" />
           <entry key="JSON" value="37" />
-          <entry key="JavaScript" value="4829" />
+          <entry key="JavaScript" value="4838" />
           <entry key="Markdown" value="180" />
           <entry key="PLAIN_TEXT" value="20" />
           <entry key="YAML" value="196" />
@@ -94,8 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+            <state relative-caret-position="166">
+              <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -104,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/order.controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
-              <caret line="6" column="16" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="16" />
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -320,12 +320,12 @@
       <workItem from="1540669181918" duration="6273000" />
       <workItem from="1540698312460" duration="10609000" />
       <workItem from="1540737483154" duration="506000" />
-      <workItem from="1540738152488" duration="10754000" />
+      <workItem from="1540738152488" duration="10846000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49354000" />
+    <option name="totallyTimeSpent" value="49446000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="23" width="1231" height="777" extended-state="0" />
@@ -509,13 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/order.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/error.hbs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -526,10 +519,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/order.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+        <state relative-caret-position="166">
+          <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
         </state>
       </provider>
     </entry>

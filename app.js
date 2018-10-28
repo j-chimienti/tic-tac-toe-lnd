@@ -42,11 +42,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const appId = process.env.appId;
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
 
     const {id} = req.session;
 
-    const order = orderController.findByUserId(id).catch(err => {
+    const order = await orderController.findByUserId(id).catch(err => {
 
         console.error(err);
 
