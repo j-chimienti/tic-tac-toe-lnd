@@ -2,19 +2,19 @@ version: '3.1'
 
 services:
 
-  mongodb:
-    image: mongo:latest
-    container_name: mongodb
-    ports:
-    - 27017:27017
-    volumes:
-    - ./data/db:/data/db
-    restart: always
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
-      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
-      MONGO_DATA_DIR: /data/db
-      MONGO_LOG_DIR: /dev/null
+#  mongodb:
+#    image: mongo:latest
+#    container_name: mongodb
+#    ports:
+#    - 27017:27017
+#    volumes:
+#    - ./data/db:/data/db
+#    restart: always
+#    environment:
+#      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+#      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+#      MONGO_DATA_DIR: /data/db
+#      MONGO_LOG_DIR: /dev/null
 
   web:
     build: .

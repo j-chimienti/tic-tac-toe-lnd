@@ -72,8 +72,6 @@ app.post('/notifications/:id', async (req, res, next) => {
 
     const result = await orderController.upsert(req.body);
 
-    req.session.result = req.body;
-
     res.sendStatus(200);
 });
 
