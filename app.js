@@ -71,7 +71,6 @@ app.post('/notifications/:id', async (req, res, next) => {
 });
 
 
-io.on('connection', onConnection);
 
 
 // catch 404 and forward to error handler
