@@ -52,7 +52,7 @@ app.get('/', (req, res) => {
 
 });
 
-app.use('/order', express.static(path.join(__dirname, 'build', 'static')));
+app.use('/order/:id', express.static(path.join(__dirname, 'build')));
 
 app.get('/order/:id', async (req, res, next) => {
 
