@@ -62,8 +62,9 @@ app.get('/order/:id', async (req, res, next) => {
         return false;
     });
 
-    if (order && order.status) {
-
+    // fixme userid
+    // todo add ttl mongo
+    if (order && order.hasOwnProperty('status') && order.status) {
 
         res.sendFile(path.join(__dirname, 'public', 'ttt.html'));
     }
