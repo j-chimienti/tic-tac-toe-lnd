@@ -56,11 +56,10 @@ app.get('/order/:id', async (req, res, next) => {
 
     const {id} = req.params;
     const order = await orderController.getOrder(id).catch(err => {
+
+        console.error(err);
         return false;
     });
-
-
-    console.log('order', order);
 
     let status = order ? order.status : 'pending';
 
@@ -73,15 +72,14 @@ app.post('/notifications/:id', async (req, res, next) => {
 
 
     const {id} = req.params;
-    console.log('status', req.body.status);
 
-    const result = await orderController.upsert(req.body).catch(err => {
+    const o = Object.assign({}, req.body, {id});
+
+    const result = await orderController.upsert(o).catch(err => {
 
         console.error(err);
         return false;
     });
-
-    console.log('result', result);
 
     global.io.to(id).emit('ORDER_SUCCESS', req.body);
 
