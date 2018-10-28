@@ -21,10 +21,13 @@ const MongoStore = require('connect-mongo')(session);
 
 app.use(session({
     store: new MongoStore({url: process.env.MONGO_URI}),
-    secret: 'testing app',
+    secret: process.env.APP_SECRET,
     resave: false,
     saveUninitialized: true,
-    // cookie: {secure: true}
+    cookie: {
+        secure: false,
+        maxAge: 3600000 // 1 hr
+    }
 }));
 
 app.use(logger('dev'));
@@ -46,6 +49,7 @@ app.get('/', async (req, res) => {
 
     const {id} = req.session;
 
+    // ttl
     const order = await orderController.findByUserId(id).catch(err => {
 
         console.error(err);
@@ -57,6 +61,7 @@ app.get('/', async (req, res) => {
     if (order && order.status) {
 
         res.sendFile(path.join(__dirname, 'public', 'ttt.html'));
+
     } else {
 
         const orderId = uuid.v1();
@@ -78,8 +83,6 @@ app.get('/order/:id', async (req, res, next) => {
         return {status: false};
     });
 
-    // fixme userid
-    // todo add ttl mongo
 
     if (order && order.status) {
 
