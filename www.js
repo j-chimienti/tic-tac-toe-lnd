@@ -126,6 +126,11 @@ async function main() {
             console.log(socket.id);
             socket.join(id);
             console.log(socket.id);
+
+            socket.id = id;
+
+            console.log(socket.id);
+
         });
 
         socket.on('GET_INVOICE_DATA', async id => {
