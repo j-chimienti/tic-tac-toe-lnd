@@ -2,6 +2,8 @@ version: '3.1'
 
 services:
   web:
+    links:
+      - mongodb:mongo
     build: .
     restart: unless-stopped
     environment:
