@@ -1,12 +1,14 @@
 version: '3.1'
 networks:
   - btcpal_default:
-      external: true
+      driver: bridge
 
 services:
 
   web:
     build: .
+    networks:
+      - btcpal_default
     restart: unless-stopped
     environment:
       NODE_ENV: development
