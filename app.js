@@ -58,6 +58,7 @@ app.post('/notifications/:id', (req, res, next) => {
 
     fs.writeFileSync('./data.json', JSON.stringify(req.body));
 
+    console.log('body', req.body);
     io.to(id).emit('orderSuccess', {success: true, order: {very: 'nice'}});
     res.sendStatus(200);
 });
