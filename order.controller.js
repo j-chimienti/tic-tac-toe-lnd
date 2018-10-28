@@ -14,12 +14,12 @@ module.exports = {
 
         return await global.db
             .collection('orders')
-            .update(order);
+            .updateOne(order);
     },
     upsert: async (order) => {
 
         return await global.db
             .collection('orders')
-            .update({id: order.id}, order, {upsert: true});
+            .updateOne({id: order.id}, order, {upsert: true});
     }
 };

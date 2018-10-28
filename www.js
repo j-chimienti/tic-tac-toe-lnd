@@ -110,6 +110,28 @@ async function main() {
     server.on('error', onError);
     server.on('listening', onListening);
 
+    var socketIO = require('socket.io');
+
+    var io = socketIO(server);
+
+    global.io = io;
+
+
+    io.on('connection', (socket) => {
+
+        socket.on('INIT_ORDER', id => {
+            socket.join(id);
+        });
+
+        socket.on('GET_INVOICE_DATA', id => {
+
+            const order = orderController.getOrder(id);
+
+            socket.emit('INVOICE_DATA', order);
+        })
+
+    });
+
 
 }
 

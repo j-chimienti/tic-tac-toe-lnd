@@ -10,17 +10,21 @@ const session = require('express-session');
 const orderController = require('./order.controller');
 
 
+
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
+const MongoStore = require('connect-mongo')(session);
+
 app.use(session({
-    secret: 'keyboard cat',
+    store: new MongoStore({ db: process.env.MONGO_URI }),
+    secret: 'testing app',
     resave: false,
     saveUninitialized: true,
-    cookie: {secure: true}
+    // cookie: {secure: true}
 }));
 
 app.use(logger('dev'));
@@ -49,7 +53,9 @@ app.get('/', (req, res) => {
 app.get('/order/:id', async (req, res, next) => {
 
     const {id} = req.params;
-    const order = await orderController.getOrder(id);
+    const order = await orderController.getOrder(id).catch(err => {
+        return false;
+    });
 
 
     console.log('order', order);
@@ -60,13 +66,19 @@ app.get('/order/:id', async (req, res, next) => {
 
 });
 
+
 app.post('/notifications/:id', async (req, res, next) => {
 
 
     const {id} = req.params;
     console.log('status', req.body.status);
 
-    const result = await orderController.upsert(req.body);
+    const result = await orderController.upsert(req.body).catch(err => {
+        return false;
+    });
+
+    global.io.to(id).emit('ORDER_SUCCESS', req.body);
+
 
     res.sendStatus(200);
 });
