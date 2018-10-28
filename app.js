@@ -44,12 +44,17 @@ const appId = process.env.appId;
 
 app.get('/', (req, res) => {
 
-    const order = orderController.findByUserId(req.session.id).catch(err => {
+    const {id} = req.session;
+
+    const order = orderController.findByUserId(id).catch(err => {
 
         console.error(err);
 
         return false;
     });
+
+    console.log('id', id);
+    console.log('order', order);
 
     if (order && order.status) {
 
@@ -76,6 +81,7 @@ app.get('/order/:id', async (req, res, next) => {
 
     // fixme userid
     // todo add ttl mongo
+
     if (order && order.status) {
 
         res.sendFile(path.join(__dirname, 'public', 'ttt.html'));
