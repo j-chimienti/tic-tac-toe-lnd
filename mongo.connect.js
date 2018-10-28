@@ -1,4 +1,9 @@
-const url = `mongodb://${process.env.MONGO_INITDB_ROOT_USERNAME}:${process.env.MONGO_INITDB_ROOT_PASSWORD}@${process.env.MONGO_CONTAINER_NAME}/admin`;
+const url = process.env.MONGO_URI;
+
+if (!url) {
+
+    throw new Error('MISSING MONGO URL');
+}
 const MongoClient = require('mongodb').MongoClient;
 
 
