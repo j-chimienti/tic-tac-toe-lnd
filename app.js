@@ -67,10 +67,11 @@ app.get('/order/:id', async (req, res, next) => {
     if (order && order.status) {
 
         res.sendFile(path.join(__dirname, 'public', 'ttt.html'));
+    } else {
+
+        const er = new Error('missing');
+        res.render('error', {error: er, message: 'invalid request'});
     }
-
-
-    else res.render('order', {status: 'pending', orderId: id, order});
 
 });
 
