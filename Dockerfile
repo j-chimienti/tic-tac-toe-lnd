@@ -4,4 +4,4 @@ COPY package*.json ./
 RUN npm i
 COPY . .
 EXPOSE 4321
-CMD node app.js
+CMD node www.js
