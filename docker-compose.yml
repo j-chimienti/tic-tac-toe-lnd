@@ -6,6 +6,6 @@ services:
     restart: unless-stopped
     environment:
       NODE_ENV: development
-      MONGO_URI: mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@mongodb/admin
+      MONGO_URI: mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@0.0.0.0/admin
     ports:
     - 4321:4321
