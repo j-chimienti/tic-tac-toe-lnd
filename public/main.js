@@ -8,7 +8,11 @@
     const {value} = orderId;
     socket.emit('INIT_ORDER', value);
 
-    socket.on('ORDER_SUCCESS', handleInvoice);
+    socket.on('ORDER_SUCCESS', result => {
+        console.log('order success!!');
+
+        handleInvoice(result);
+    });
 
     function getInvoice() {
         socket.emit('GET_INVOICE_DATA', orderId.value);

@@ -77,6 +77,8 @@ app.post('/notifications/:id', async (req, res, next) => {
         return false;
     });
 
+    console.log('result', result);
+
     global.io.to(id).emit('ORDER_SUCCESS', req.body);
 
 
