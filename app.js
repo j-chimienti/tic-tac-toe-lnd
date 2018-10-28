@@ -11,7 +11,6 @@ const orderController = require('./order.controller');
 const uuid = require("uuid");
 
 
-
 var app = express();
 
 // view engine setup
@@ -21,7 +20,7 @@ app.set('view engine', 'hbs');
 const MongoStore = require('connect-mongo')(session);
 
 app.use(session({
-    store: new MongoStore({ url: process.env.MONGO_URI }),
+    store: new MongoStore({url: process.env.MONGO_URI}),
     secret: 'testing app',
     resave: false,
     saveUninitialized: true,
@@ -81,7 +80,9 @@ app.post('/notifications/:id', async (req, res, next) => {
         return false;
     });
 
-    global.io.to(id).emit('ORDER_SUCCESS', req.body);
+    console.log('io', global.io);
+
+    global.io.to(id).emit('ORDER_SUCCESS', o);
 
 
     res.sendStatus(200);

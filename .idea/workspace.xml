@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="642341c1-e3a4-48da-8c76-9c0f26e667fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/www.js" beforeDir="false" afterPath="$PROJECT_DIR$/www.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -66,7 +66,7 @@
           <entry key="gitignore" value="6" />
           <entry key="hbs" value="1463" />
           <entry key="html" value="5" />
-          <entry key="js" value="4046" />
+          <entry key="js" value="4078" />
           <entry key="json" value="37" />
           <entry key="md" value="180" />
           <entry key="yml" value="196" />
@@ -79,7 +79,7 @@
           <entry key="HTML" value="5" />
           <entry key="Handlebars/Mustache" value="1463" />
           <entry key="JSON" value="37" />
-          <entry key="JavaScript" value="4046" />
+          <entry key="JavaScript" value="4078" />
           <entry key="Markdown" value="180" />
           <entry key="PLAIN_TEXT" value="20" />
           <entry key="YAML" value="196" />
@@ -91,11 +91,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="360">
+              <caret line="82" column="33" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -109,10 +109,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
+            <state relative-caret-position="473">
               <caret line="131" column="12" selection-start-line="131" selection-start-column="12" selection-end-line="131" selection-end-column="12" />
             </state>
           </provider>
@@ -192,9 +192,9 @@
         <option value="$PROJECT_DIR$/views/order.hbs" />
         <option value="$PROJECT_DIR$/public/main.js" />
         <option value="$PROJECT_DIR$/order.controller.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/index.hbs" />
         <option value="$PROJECT_DIR$/www.js" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -331,12 +331,12 @@
       <workItem from="1540669181918" duration="6273000" />
       <workItem from="1540698312460" duration="10609000" />
       <workItem from="1540737483154" duration="506000" />
-      <workItem from="1540738152488" duration="7814000" />
+      <workItem from="1540738152488" duration="8046000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46414000" />
+    <option name="totallyTimeSpent" value="46646000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="23" width="1231" height="777" extended-state="0" />
@@ -373,17 +373,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>86</line>
+          <line>87</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>73</line>
+          <line>72</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>65</line>
+          <line>64</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -520,17 +520,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/www.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="473">
+          <caret line="131" column="12" selection-start-line="131" selection-start-column="12" selection-end-line="131" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www.js">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="131" column="12" selection-start-line="131" selection-start-column="12" selection-end-line="131" selection-end-column="12" />
+        <state relative-caret-position="360">
+          <caret line="82" column="33" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
         </state>
       </provider>
     </entry>
