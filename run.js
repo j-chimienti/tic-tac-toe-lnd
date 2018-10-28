@@ -1,7 +1,7 @@
 const app = require('./app');
 const mongoConnect = require('mongo.connect');
 
-const dbName = 'registration';
+const dbName = 'notifications';
 
 async function main() {
     const client = await mongoConnect();

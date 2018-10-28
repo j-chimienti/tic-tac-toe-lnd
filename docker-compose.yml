@@ -5,6 +5,7 @@ services:
   mongodb-btcstore:
     image: mongo:latest
     container_name: mongodb-btcstore
+
     ports:
     - 27017:27017
     volumes:
@@ -29,7 +30,7 @@ services:
       GMAIL_USER: ${GMAIL_USER}
       # Links allow you to define extra aliases
     links:
-    - "mongodb-btcstore:mongo"
+    - "mongodb:mongo"
     ports:
     - 5555:5555
     depends_on:
