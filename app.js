@@ -55,6 +55,7 @@ app.get('/order/:id', (req, res, next) => {
 
     const {result: {status = 'incomplete'}} = req.session;
 
+    console.log('session', req.session);
     res.render('order', {status, orderId: id, result: req.session.result});
 
 });
@@ -65,8 +66,10 @@ app.post('/notifications/:id', (req, res, next) => {
 
     const {id} = req.params;
     console.log('status', req.body.status);
+    console.log('session', req.session);
 
     req.session.result = req.body;
+
 
     res.sendStatus(200);
 });
