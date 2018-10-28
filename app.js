@@ -7,6 +7,7 @@ var logger = require('morgan');
 var sassMiddleware = require('node-sass-middleware');
 const port = process.env.PORT || 3000;
 var parseurl = require('parseurl');
+const fs = require('fs');
 
 
 var app = express();
@@ -54,6 +55,9 @@ app.post('/notifications/:id', (req, res, next) => {
     // verify!!!
 
     const {id} = req.params;
+
+    fs.writeFileSync('./data.json', JSON.stringify(req.body));
+
     io.to(id).emit('orderSuccess', {success: true, order: {very: 'nice'}});
     res.sendStatus(200);
 });
