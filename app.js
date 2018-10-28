@@ -38,6 +38,7 @@ app.use(sassMiddleware({
     sourceMap: true
 }));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'build')));
 
 const appId = process.env.appId;
 
@@ -60,14 +61,14 @@ app.get('/order/:id', async (req, res, next) => {
         return false;
     });
 
-    if (!order) {
+    if (order && order.status === 'complete') {
 
-        console.error('error yo', order);
+
+        res.sendFile(path.join(__dirname, 'build', 'index.html'));
     }
 
-    let status = order ? order.status : 'pending';
 
-    res.render('order', {status, orderId: id, order});
+    else res.render('order', {status, orderId: id, order});
 
 });
 

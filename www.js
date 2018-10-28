@@ -115,9 +115,6 @@ async function main() {
 
     var io = socketIO(server);
 
-    global.io = io;
-
-
     io.on('connection', (socket) => {
 
         socket.on('GET_INVOICE_DATA', async id => {
