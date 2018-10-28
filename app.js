@@ -8,6 +8,7 @@ var sassMiddleware = require('node-sass-middleware');
 const session = require('express-session');
 
 const orderController = require('./order.controller');
+const uuid = require("uuid");
 
 
 
@@ -43,7 +44,8 @@ const appId = process.env.appId;
 
 app.get('/', (req, res) => {
 
-    const orderId = req.session.id;
+    const orderId = uuid.v1();
+    res.locals.userId = req.session.id;
     res.locals.orderId = orderId;
     res.locals.appId = appId;
     res.render('index');
