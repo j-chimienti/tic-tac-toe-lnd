@@ -38,7 +38,7 @@ app.use(sassMiddleware({
     sourceMap: true
 }));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'build')));
+
 
 const appId = process.env.appId;
 
@@ -51,6 +51,8 @@ app.get('/', (req, res) => {
     res.render('index');
 
 });
+
+app.use('/order', express.static(path.join(__dirname, 'build'))
 
 app.get('/order/:id', async (req, res, next) => {
 
