@@ -1,15 +1,11 @@
 version: '3.1'
 
 services:
-
   web:
     build: .
-    networks:
-    - btcpal_default
     restart: unless-stopped
     environment:
       NODE_ENV: development
       MONGO_URI: mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@mongodb/admin
-
     ports:
     - 4321:4321
