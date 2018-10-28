@@ -44,6 +44,18 @@ const appId = process.env.appId;
 
 app.get('/', (req, res) => {
 
+    const order = orderController.findByUserId(req.session.id).catch(err => {
+
+        console.error(err);
+
+        return false;
+    });
+
+    if (order && order.status) {
+
+        res.sendFile(path.join(__dirname, 'public', 'ttt.html'));
+    }
+
     const orderId = uuid.v1();
     res.locals.userId = req.session.id;
     res.locals.orderId = orderId;
@@ -76,15 +88,14 @@ app.get('/order/:id', async (req, res, next) => {
 });
 
 
-app.post('/notifications/:id', async (req, res, next) => {
+app.post('/notifications/:id/:userId', async (req, res, next) => {
 
 
-    const {id} = req.params;
+    const {id, userId} = req.params;
 
-    const o = Object.assign({}, req.body, {id});
+    const o = Object.assign({}, req.body, {id, userId});
 
-    const result = await orderController.upsert(o).catch(err => {
-
+    await orderController.upsert(o).catch(err => {
         console.error(err);
         return false;
     });

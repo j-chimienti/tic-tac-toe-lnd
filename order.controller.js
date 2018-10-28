@@ -4,6 +4,11 @@ module.exports = {
             .collection('orders')
             .insertOne(order);
     },
+    findByUserId: async (userId) => {
+        return await global.db
+            .collection('orders')
+            .findOne({userId})
+    },
     getOrder: async (id) => {
 
         return await global.db
