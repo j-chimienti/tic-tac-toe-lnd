@@ -53,20 +53,19 @@ app.get('/', async (req, res) => {
         return false;
     });
 
-    console.log('id', id);
-    console.log('order', order);
 
     if (order && order.status) {
 
         res.sendFile(path.join(__dirname, 'public', 'ttt.html'));
+    } else {
+
+        const orderId = uuid.v1();
+        res.locals.userId = req.session.id;
+        res.locals.orderId = orderId;
+        res.locals.appId = appId;
+        res.render('index');
+
     }
-
-    const orderId = uuid.v1();
-    res.locals.userId = req.session.id;
-    res.locals.orderId = orderId;
-    res.locals.appId = appId;
-    res.render('index');
-
 });
 
 
