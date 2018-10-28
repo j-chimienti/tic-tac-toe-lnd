@@ -51,15 +51,11 @@ app.get('/order/:id', (req, res, next) => {
 
 app.post('/notifications/:id', (req, res, next) => {
 
-
-    // verify!!!
-
     const {id} = req.params;
 
-    fs.writeFileSync('./data.json', JSON.stringify(req.body));
+    console.log('status', req.body.status);
 
-    console.log('body', req.body);
-    io.to(id).emit('orderSuccess', {success: true, order: {very: 'nice'}});
+    io.to(id).emit('orderSuccess', {result: req.body});
     res.sendStatus(200);
 });
 
