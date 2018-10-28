@@ -124,11 +124,11 @@ async function main() {
             socket.join(id);
         });
 
-        socket.on('GET_INVOICE_DATA', id => {
+        socket.on('GET_INVOICE_DATA', async id => {
 
             console.log('id', id);
 
-            const order = orderController.getOrder(id);
+            const order = await orderController.getOrder(id);
 
             console.log('order', order);
 
