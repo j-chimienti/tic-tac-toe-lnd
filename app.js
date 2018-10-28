@@ -63,14 +63,14 @@ app.get('/order/:id', async (req, res, next) => {
         return false;
     });
 
-    if (order && order.status === 'complete') {
+    if (order && order.status) {
 
 
         res.sendFile(path.join(__dirname, 'build', 'index.html'));
     }
 
 
-    else res.render('order', {status, orderId: id, order});
+    else res.render('order', {status: order.status, orderId: id, order});
 
 });
 
