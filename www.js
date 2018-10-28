@@ -10,6 +10,7 @@ var app = require('./app');
 var http = require('http');
 const orderController = require("./order.controller");
 const mongoConnect = require('./mongo.connect').connect;
+var socketIO = require('socket.io');
 
 
 /**
@@ -111,7 +112,6 @@ async function main() {
     server.on('error', onError);
     server.on('listening', onListening);
 
-    var socketIO = require('socket.io');
 
     var io = socketIO(server);
 
@@ -121,16 +121,16 @@ async function main() {
     io.on('connection', (socket) => {
 
         socket.on('INIT_ORDER', id => {
+
+            console.log('init');
+            console.log(socket.id);
             socket.join(id);
+            console.log(socket.id);
         });
 
         socket.on('GET_INVOICE_DATA', async id => {
 
-            console.log('id', id);
-
             const order = await orderController.getOrder(id);
-
-            console.log('order', order);
 
             socket.emit('INVOICE_DATA', order);
         })
