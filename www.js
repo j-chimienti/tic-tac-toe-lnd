@@ -126,7 +126,11 @@ async function main() {
 
         socket.on('GET_INVOICE_DATA', id => {
 
+            console.log('id', id);
+
             const order = orderController.getOrder(id);
+
+            console.log('order', order);
 
             socket.emit('INVOICE_DATA', order);
         })
