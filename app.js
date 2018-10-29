@@ -1,17 +1,17 @@
 require('dotenv').load();
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-var sassMiddleware = require('node-sass-middleware');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const sassMiddleware = require('node-sass-middleware');
 const session = require('express-session');
 
 const orderController = require('./order.controller');
 const uuid = require("uuid");
 
 
-var app = express();
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -43,7 +43,6 @@ app.use(sassMiddleware({
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-const appId = process.env.appId;
 
 app.get('/', async (req, res) => {
 
@@ -67,7 +66,6 @@ app.get('/', async (req, res) => {
         const orderId = uuid.v1();
         res.locals.userId = req.session.id;
         res.locals.orderId = orderId;
-        res.locals.appId = appId;
         res.render('index');
 
     }
@@ -100,7 +98,7 @@ app.post('/notifications/:id/:userId', async (req, res, next) => {
 
     const {id, userId} = req.params;
 
-    const o = Object.assign({}, req.body, {id, userId});
+    const o = Object.assign({}, req.body, {id, userId, expirationTime: new Date(req.body.expirationTime)});
 
     await orderController.upsert(o).catch(err => {
         console.error(err);
