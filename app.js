@@ -84,12 +84,12 @@ app.get('/order/:id', async (req, res, next) => {
     });
 
 
-    if (order && order.status) {
+    if (order && order.status && order.status === 'complete') {
 
         res.sendFile(path.join(__dirname, 'public', 'ttt.html'));
     } else {
 
-      res.redirect('/');
+        res.redirect('/');
     }
 
 });
