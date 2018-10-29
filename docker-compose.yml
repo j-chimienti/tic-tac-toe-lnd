@@ -19,4 +19,4 @@ services:
     - 4321:4321
 networks:
   btcpal_default:
-    driver: default
+    driver: bridge
