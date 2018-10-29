@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-    background-image: url(http://wallsdesk.com/wp-content/uploads/2016/11/Night-Sky-Stars-HD-Wallpaper.jpg) var(--dark) no-repeat 50% fixed;
+    background: url(http://wallsdesk.com/wp-content/uploads/2016/11/Night-Sky-Stars-HD-Wallpaper.jpg) var(--dark) no-repeat 50% fixed;
     background-size: cover;
 }
 
