@@ -89,8 +89,7 @@ app.get('/order/:id', async (req, res, next) => {
         res.sendFile(path.join(__dirname, 'public', 'ttt.html'));
     } else {
 
-        const er = new Error('missing');
-        res.render('error', {error: er, message: 'invalid request'});
+      res.redirect('/');
     }
 
 });

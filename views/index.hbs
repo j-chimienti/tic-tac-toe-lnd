@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/style.css">
 <div class="my-3">
     <div class="container">
-        <form method="POST" action="https://btcpal.online/apps/GSWCHJKG7XH4oJeMLaFAZ8LMyrC7XtYnT4SYRqXgivxr/pos">
+        <form method="POST" action="https://btcpal.online/apps/4SzvB5nnqAeM6mi8hMjxSeSGw3L3/pos">
 
             <h2>Tic Tac Toe - 1 satoshi</h2>
 
@@ -13,11 +13,12 @@
                    name="orderId"
             />
             <input type="hidden" name="orderId" value="{{orderId}}"/>
-            <input type="hidden" name="notificationUrl" value="http://74.207.232.172:4321/notifications/{{orderId}}/{{userId}}"/>
+            <input type="hidden" name="notificationUrl"
+                   value="http://74.207.232.172:4321/notifications/{{orderId}}/{{userId}}"/>
             <input type="hidden" name="redirectUrl" value="http://74.207.232.172:4321/order/{{orderId}}"/>
-            <button type="submit" name="choiceKey" value="one" class="btn btn-outline-warning">
+            <button type="submit" name="choiceKey" value="game" class="btn btn-outline-warning">
                 Buy
-                <img src="/btc.svg" alt="btc" width="30" height="30"/>
+                <img src="/btc.svg" alt="btc" width="40" height="40"/>
             </button>
         </form>
 
