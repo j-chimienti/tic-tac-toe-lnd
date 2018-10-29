@@ -4,7 +4,7 @@ services:
 
   mongodb:
     networks:
-      - btcpurchase_default
+      - btcpal_default
     image: mongo
     ports:
       - 27017:27017
