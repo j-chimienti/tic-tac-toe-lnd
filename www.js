@@ -105,8 +105,6 @@ async function main() {
 
     global.db = client.db(dbName);
 
-    console.log('db', global.db);
-
     console.log('port %' + port);
     server.listen(port, '0.0.0.0');
     server.on('error', onError);
