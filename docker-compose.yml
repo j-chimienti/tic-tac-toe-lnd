@@ -1,22 +1,12 @@
 version: '3.1'
 
 services:
-
-  mongodb:
+  web:
     networks:
       - btcpal_default
-    image: mongo
-    ports:
-      - 27017:27017
-  web:
-    links:
-      - mongodb:mongo
     build: .
     restart: unless-stopped
     env_file:
       - .env
     ports:
-    - 4321:4321
-networks:
-  btcpal_default:
-    driver: bridge
+    - "4321:4321"
