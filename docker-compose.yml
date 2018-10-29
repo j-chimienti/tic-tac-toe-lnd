@@ -17,3 +17,6 @@ services:
       - .env
     ports:
     - 4321:4321
+networks:
+  btcpal_default:
+    driver: default
