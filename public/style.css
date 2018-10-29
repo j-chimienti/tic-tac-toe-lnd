@@ -27,9 +27,21 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
+
+
+.page-title {
+
+    margin-top: 50px;
+}
 @media all and (min-width: 476px) {
     section {
         padding-top: 100px;
+    }
+
+
+    .page-title {
+
+        margin-top: 100px;
     }
 }
 
