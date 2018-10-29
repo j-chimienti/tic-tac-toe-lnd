@@ -43,7 +43,6 @@ app.use(sassMiddleware({
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-
 app.get('/', async (req, res) => {
 
     const {id} = req.session;
@@ -98,7 +97,14 @@ app.post('/notifications/:id/:userId', async (req, res, next) => {
 
     const {id, userId} = req.params;
 
-    const o = Object.assign({}, req.body, {id, userId, expirationTime: new Date(req.body.expirationTime)});
+    const o = Object.assign({}, req.body,
+        {
+            id,
+            userId,
+            expirationTime: new Date(req.body.expirationTime),
+            invoiceTime: new Date(req.body.invoiceTime),
+            currentTime: new Date(req.body.currentTime),
+        });
 
     await orderController.upsert(o).catch(err => {
         console.error(err);

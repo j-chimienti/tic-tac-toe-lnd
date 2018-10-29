@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="/style.css">
 <div class="my-3">
-    <div class="container">
+    <div class="container text-center text-light">
+        <h1 class="text-center text-light">Tic Tac Toe</h1>
         <form method="POST" action="https://btcpal.online/apps/4SzvB5nnqAeM6mi8hMjxSeSGw3L3/pos">
 
-            <h2>Tic Tac Toe - 1 satoshi</h2>
 
             <input readonly
                    id="orderId"
@@ -17,7 +17,7 @@
                    value="http://74.207.232.172:4321/notifications/{{orderId}}/{{userId}}"/>
             <input type="hidden" name="redirectUrl" value="http://74.207.232.172:4321/order/{{orderId}}"/>
             <button type="submit" name="choiceKey" value="game" class="btn btn-outline-warning">
-                Buy
+                Pay 1 Satoshi
                 <img src="/btc.svg" alt="btc" width="40" height="40"/>
             </button>
         </form>

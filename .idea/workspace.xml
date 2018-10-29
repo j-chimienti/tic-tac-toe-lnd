@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="642341c1-e3a4-48da-8c76-9c0f26e667fe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.hbs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,7 +19,7 @@
     <session id="2105331830">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
@@ -25,8 +27,8 @@
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.open.time.7" value="3" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -35,7 +37,7 @@
           <entry key="css" value="10" />
           <entry key="env" value="11" />
           <entry key="gitignore" value="1" />
-          <entry key="hbs" value="40" />
+          <entry key="hbs" value="41" />
           <entry key="html" value="2" />
           <entry key="js" value="32" />
           <entry key="json" value="8" />
@@ -50,7 +52,7 @@
           <entry key="CSS" value="10" />
           <entry key="Dockerfile" value="6" />
           <entry key="HTML" value="2" />
-          <entry key="Handlebars/Mustache" value="40" />
+          <entry key="Handlebars/Mustache" value="41" />
           <entry key="JSON" value="8" />
           <entry key="JavaScript" value="34" />
           <entry key="Markdown" value="5" />
@@ -65,9 +67,9 @@
           <entry key="css" value="337" />
           <entry key="env" value="47" />
           <entry key="gitignore" value="6" />
-          <entry key="hbs" value="1575" />
+          <entry key="hbs" value="1634" />
           <entry key="html" value="24" />
-          <entry key="js" value="4994" />
+          <entry key="js" value="5023" />
           <entry key="json" value="37" />
           <entry key="md" value="180" />
           <entry key="yml" value="396" />
@@ -78,9 +80,9 @@
           <entry key="CSS" value="337" />
           <entry key="Dockerfile" value="34" />
           <entry key="HTML" value="24" />
-          <entry key="Handlebars/Mustache" value="1575" />
+          <entry key="Handlebars/Mustache" value="1634" />
           <entry key="JSON" value="37" />
-          <entry key="JavaScript" value="4994" />
+          <entry key="JavaScript" value="5023" />
           <entry key="Markdown" value="180" />
           <entry key="PLAIN_TEXT" value="53" />
           <entry key="YAML" value="396" />
@@ -92,11 +94,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="100" column="103" selection-start-line="100" selection-start-column="103" selection-end-line="100" selection-end-column="103" />
+            <state relative-caret-position="257">
+              <caret line="101" column="15" lean-forward="true" selection-start-line="101" selection-start-column="15" selection-end-line="101" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/index.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -154,10 +165,10 @@
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/views/index.hbs" />
         <option value="$PROJECT_DIR$/public/static/css/main.0435edba.css" />
         <option value="$PROJECT_DIR$/public/style.css" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/views/index.hbs" />
       </list>
     </option>
   </component>
@@ -195,6 +206,11 @@
             <path>
               <item name="btc-store" type="b2602c69:ProjectViewProjectNode" />
               <item name="btc-store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="btc-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="btc-store" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -298,18 +314,19 @@
       <workItem from="1540698312460" duration="10609000" />
       <workItem from="1540737483154" duration="506000" />
       <workItem from="1540738152488" duration="11062000" />
-      <workItem from="1540764790639" duration="6088000" />
+      <workItem from="1540764790639" duration="6564000" />
+      <workItem from="1540780751419" duration="80000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55750000" />
+    <option name="totallyTimeSpent" value="56306000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="23" width="1231" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2371741" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24053827" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -340,17 +357,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>107</line>
+          <line>113</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>98</line>
+          <line>97</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>87</line>
+          <line>86</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -485,14 +502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
-          <caret line="20" column="67" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -524,8 +533,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="100" column="103" selection-start-line="100" selection-start-column="103" selection-end-line="100" selection-end-column="103" />
+        <state relative-caret-position="257">
+          <caret line="101" column="15" lean-forward="true" selection-start-line="101" selection-start-column="15" selection-end-line="101" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
         </state>
       </provider>
     </entry>
