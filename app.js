@@ -86,7 +86,7 @@ app.get('/orders/:id', async (req, res) => {
         return {status: false};
     });
 
-    if (order && order.status === 'complete') {
+    if (order && order.status === 'complete' && order.userId === userId) {
 
         res.sendFile(path.join(__dirname, 'public', 'ttt.html'));
 
