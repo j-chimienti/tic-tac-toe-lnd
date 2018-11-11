@@ -1,4 +1,3 @@
-import {Order} from "./lib/orders/order.model";
 
 require('dotenv').load();
 const createError = require('http-errors');
