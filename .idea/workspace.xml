@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="642341c1-e3a4-48da-8c76-9c0f26e667fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/orders/orders.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/orders/orders.router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redeploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/redeploy.sh" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,14 +42,16 @@
           <entry key="js" value="46" />
           <entry key="json" value="8" />
           <entry key="md" value="6" />
+          <entry key="sh" value="2" />
           <entry key="svg" value="1" />
           <entry key="ts" value="3" />
           <entry key="www" value="3" />
-          <entry key="yml" value="9" />
+          <entry key="yml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Bash" value="2" />
           <entry key="CSS" value="13" />
           <entry key="Dockerfile" value="6" />
           <entry key="HTML" value="2" />
@@ -60,7 +62,7 @@
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="SVG" value="1" />
           <entry key="TypeScript" value="3" />
-          <entry key="YAML" value="9" />
+          <entry key="YAML" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -71,25 +73,27 @@
           <entry key="gitignore" value="6" />
           <entry key="hbs" value="1867" />
           <entry key="html" value="24" />
-          <entry key="js" value="5931" />
+          <entry key="js" value="5982" />
           <entry key="json" value="37" />
           <entry key="md" value="180" />
+          <entry key="sh" value="170" />
           <entry key="ts" value="504" />
-          <entry key="yml" value="396" />
+          <entry key="yml" value="413" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Bash" value="170" />
           <entry key="CSS" value="374" />
           <entry key="Dockerfile" value="34" />
           <entry key="HTML" value="24" />
           <entry key="Handlebars/Mustache" value="1867" />
           <entry key="JSON" value="37" />
-          <entry key="JavaScript" value="5931" />
+          <entry key="JavaScript" value="5982" />
           <entry key="Markdown" value="180" />
           <entry key="PLAIN_TEXT" value="53" />
           <entry key="TypeScript" value="504" />
-          <entry key="YAML" value="396" />
+          <entry key="YAML" value="413" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -105,8 +109,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="63" column="93" selection-start-line="63" selection-start-column="93" selection-end-line="63" selection-end-column="93" />
+            <state relative-caret-position="350">
+              <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/start.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="35" lean-forward="true" selection-start-line="1" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -129,11 +142,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/orders/orders.router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+            <state relative-caret-position="290">
+              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+              <folding>
+                <element signature="e#601#849#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/redeploy.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -191,7 +216,6 @@
         <option value="$PROJECT_DIR$/order.controller.js" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/public/static/css/main.0435edba.css" />
         <option value="$PROJECT_DIR$/public/style.css" />
         <option value="$PROJECT_DIR$/www.js" />
@@ -203,7 +227,11 @@
         <option value="$PROJECT_DIR$/views/order.hbs" />
         <option value="$PROJECT_DIR$/lib/orders/index.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/start.sh" />
         <option value="$PROJECT_DIR$/lib/orders/orders.router.js" />
+        <option value="$PROJECT_DIR$/d.sh" />
+        <option value="$PROJECT_DIR$/redeploy.sh" />
       </list>
     </option>
   </component>
@@ -242,22 +270,6 @@
             <path>
               <item name="btc-store" type="b2602c69:ProjectViewProjectNode" />
               <item name="btc-store" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btc-store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btc-store" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btc-store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btc-store" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="orders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btc-store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btc-store" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -367,18 +379,18 @@
       <workItem from="1540764790639" duration="6564000" />
       <workItem from="1540780751419" duration="1688000" />
       <workItem from="1540820852186" duration="570000" />
-      <workItem from="1541899823307" duration="3449000" />
+      <workItem from="1541899823307" duration="4043000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61933000" />
+    <option name="totallyTimeSpent" value="62527000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="23" width="1231" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24053827" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24053827" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -395,7 +407,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Terminal" order="3" visible="true" weight="0.24642557" />
+      <window_info active="true" anchor="right" id="Terminal" order="3" visible="true" weight="0.29688814" />
       <window_info anchor="right" id="Debug" order="4" weight="0.36333054" />
     </layout>
   </component>
@@ -543,13 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/order.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="653">
@@ -597,15 +602,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="63" column="93" selection-start-line="63" selection-start-column="93" selection-end-line="63" selection-end-column="93" />
+        <state relative-caret-position="350">
+          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="35" lean-forward="true" selection-start-line="1" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/orders/orders.router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+        <state relative-caret-position="290">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <folding>
+            <element signature="e#601#849#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redeploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
         </state>
       </provider>
     </entry>
