@@ -74,6 +74,28 @@ app.get('/', async (req, res) => {
 
 app.use('/orders', orderRouter);
 
+app.get('/orders/:id', async (req, res) => {
+
+    const {id} = req.params;
+
+    const userId = req.session.id;
+
+    const order = await orderDao.getOrder({id, userId}).catch(err => {
+
+        console.error(err);
+        return {status: false};
+    });
+
+    if (order && order.status === 'complete') {
+
+        res.sendFile(path.join(__dirname, 'public', 'ttt.html'));
+
+    } else {
+
+        res.redirect('/');
+    }
+
+});
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
