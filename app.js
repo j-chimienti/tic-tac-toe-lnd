@@ -58,12 +58,7 @@ app.get('/', async (req, res) => {
     });
 
 
-
-    console.log(order.id, order.userId);
-
-    console.log(id, order.userId === order.userId, order && order.status && order.id === id)
-
-    if (order && order.status && order.id === id) {
+    if (order && order.status) {
 
         res.sendFile(path.join(__dirname, 'public', 'ttt.html'));
 

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="642341c1-e3a4-48da-8c76-9c0f26e667fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/orders/orders.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/orders/orders.router.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,7 +37,7 @@
           <entry key="css" value="13" />
           <entry key="env" value="11" />
           <entry key="gitignore" value="1" />
-          <entry key="hbs" value="42" />
+          <entry key="hbs" value="43" />
           <entry key="html" value="2" />
           <entry key="js" value="46" />
           <entry key="json" value="8" />
@@ -52,7 +53,7 @@
           <entry key="CSS" value="13" />
           <entry key="Dockerfile" value="6" />
           <entry key="HTML" value="2" />
-          <entry key="Handlebars/Mustache" value="42" />
+          <entry key="Handlebars/Mustache" value="43" />
           <entry key="JSON" value="8" />
           <entry key="JavaScript" value="48" />
           <entry key="Markdown" value="6" />
@@ -70,7 +71,7 @@
           <entry key="gitignore" value="6" />
           <entry key="hbs" value="1867" />
           <entry key="html" value="24" />
-          <entry key="js" value="5917" />
+          <entry key="js" value="5931" />
           <entry key="json" value="37" />
           <entry key="md" value="180" />
           <entry key="ts" value="504" />
@@ -84,7 +85,7 @@
           <entry key="HTML" value="24" />
           <entry key="Handlebars/Mustache" value="1867" />
           <entry key="JSON" value="37" />
-          <entry key="JavaScript" value="5917" />
+          <entry key="JavaScript" value="5931" />
           <entry key="Markdown" value="180" />
           <entry key="PLAIN_TEXT" value="53" />
           <entry key="TypeScript" value="504" />
@@ -101,11 +102,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="63" column="91" selection-start-line="63" selection-start-column="91" selection-end-line="63" selection-end-column="91" />
+            <state relative-caret-position="112">
+              <caret line="63" column="93" selection-start-line="63" selection-start-column="93" selection-end-line="63" selection-end-column="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/index.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="23" column="104" selection-start-line="23" selection-start-column="104" selection-end-line="23" selection-end-column="104" />
             </state>
           </provider>
         </entry>
@@ -119,11 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/orders/orders.router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+            <state relative-caret-position="333">
+              <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -192,8 +202,8 @@
         <option value="$PROJECT_DIR$/public/main.js" />
         <option value="$PROJECT_DIR$/views/order.hbs" />
         <option value="$PROJECT_DIR$/lib/orders/index.js" />
-        <option value="$PROJECT_DIR$/lib/orders/orders.router.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/lib/orders/orders.router.js" />
       </list>
     </option>
   </component>
@@ -357,18 +367,18 @@
       <workItem from="1540764790639" duration="6564000" />
       <workItem from="1540780751419" duration="1688000" />
       <workItem from="1540820852186" duration="570000" />
-      <workItem from="1541899823307" duration="3260000" />
+      <workItem from="1541899823307" duration="3449000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61744000" />
+    <option name="totallyTimeSpent" value="61933000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="23" width="1231" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24053827" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24053827" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -540,13 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="104" selection-start-line="23" selection-start-column="104" selection-end-line="23" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/order.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="653">
@@ -578,13 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/orders/orders.router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/orders/orders.dao.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -592,10 +588,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="23" column="104" selection-start-line="23" selection-start-column="104" selection-end-line="23" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="63" column="91" selection-start-line="63" selection-start-column="91" selection-end-line="63" selection-end-column="91" />
+        <state relative-caret-position="112">
+          <caret line="63" column="93" selection-start-line="63" selection-start-column="93" selection-end-line="63" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/orders/orders.router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
         </state>
       </provider>
     </entry>
