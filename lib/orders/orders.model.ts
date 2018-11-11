@@ -44,7 +44,7 @@ export class Order implements IOrder {
                     paymentTotals,
                     amountPaid,
                     exchangeRates,
-                }: IOrder) {
+                }) {
         this.id = id;
         this.userId = userId;
         this.expirationTime = new Date(expirationTime);
@@ -92,7 +92,6 @@ interface ExchangeRates {
 }
 
 interface IOrder {
-    // _id: string;
     id: string;
     url?: any;
     posData?: any;
@@ -100,9 +99,9 @@ interface IOrder {
     btcPrice?: any;
     price: number;
     currency: string;
-    invoiceTime: number;
-    expirationTime: number;
-    currentTime: number;
+    invoiceTime: Date;
+    expirationTime: Date;
+    currentTime: Date;
     btcPaid?: any;
     btcDue?: any;
     rate: number;
