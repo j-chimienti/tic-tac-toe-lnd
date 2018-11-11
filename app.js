@@ -1,3 +1,5 @@
+import {Order} from "./lib/orders/order.model";
+
 require('dotenv').load();
 const createError = require('http-errors');
 const express = require('express');
@@ -7,7 +9,7 @@ const logger = require('morgan');
 const sassMiddleware = require('node-sass-middleware');
 const session = require('express-session');
 
-const orderController = require('./order.controller');
+const orderController = require('./lib/orders/order.controller');
 const uuid = require("uuid");
 
 
@@ -56,7 +58,7 @@ app.get('/', async (req, res) => {
     });
 
 
-    if (order && order.status) {
+    if (order && order.status && order.id === id) {
 
         res.sendFile(path.join(__dirname, 'public', 'ttt.html'));
 
@@ -71,48 +73,8 @@ app.get('/', async (req, res) => {
 });
 
 
-app.get('/order/:id', async (req, res, next) => {
 
-    const {id} = req.params;
-    const order = await orderController.getOrder(id).catch(err => {
-
-        console.error(err);
-        return {status: false};
-    });
-
-
-    if (order && order.status && order.status === 'complete') {
-
-        res.sendFile(path.join(__dirname, 'public', 'ttt.html'));
-    } else {
-
-        res.redirect('/');
-    }
-
-});
-
-
-app.post('/notifications/:id/:userId', async (req, res, next) => {
-
-
-    const {id, userId} = req.params;
-
-    const o = Object.assign({}, req.body,
-        {
-            id,
-            userId,
-            expirationTime: new Date(req.body.expirationTime),
-            invoiceTime: new Date(req.body.invoiceTime),
-            currentTime: new Date(req.body.currentTime),
-        });
-
-    await orderController.upsert(o).catch(err => {
-        console.error(err);
-        return false;
-    });
-
-    res.sendStatus(200);
-});
+app.use('/orders', orderController);
 
 
 // catch 404 and forward to error handler

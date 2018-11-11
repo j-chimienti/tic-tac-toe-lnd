@@ -8,8 +8,8 @@ require('dotenv').load();
 
 var app = require('./app');
 var http = require('http');
-const orderController = require("./order.controller");
-const mongoConnect = require('./mongo.connect').connect;
+const orderController = require("./lib/orders/order.controller");
+const mongoConnect = require('./lib/mongo.connect').connect;
 var socketIO = require('socket.io');
 
 

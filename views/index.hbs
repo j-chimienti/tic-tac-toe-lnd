@@ -19,9 +19,9 @@
             />
             <input type="hidden" name="orderId" value="{{orderId}}"/>
             <input type="hidden" name="notificationUrl"
-                   value="http://74.207.232.172:4321/notifications/{{orderId}}/{{userId}}"/>
-            <input type="hidden" name="redirectUrl" value="http://74.207.232.172:4321/order/{{orderId}}"/>
-            <button type="submit" name="choiceKey" value="game" class="btn btn-outline-warning">
+                   value="http://74.207.232.172:4321/orders/{{orderId}}/{{userId}}"/>
+            <input type="hidden" name="redirectUrl" value="http://74.207.232.172:4321/orders/{{orderId}}"/>
+            <button type="submit" name="choiceKey" value="game" class="btn btn-warning text-white btn-lg">
                 Pay 1 Satoshi
                 <img src="/btc.svg" alt="btc" width="40" height="40"/>
                 <span role="img" class="pl-1">
@@ -34,8 +34,11 @@
         <div class="row ">
             <iframe
                     class="mx-auto"
-                    width="560" height="315" src="https://www.youtube.com/embed/ReUvW5Y7D3Y" frameborder="0"
-                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    width="560" height="315"
+                    src="https://www.youtube.com/embed/ReUvW5Y7D3Y"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
         </div>
     </div>
 
