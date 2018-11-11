@@ -8,7 +8,7 @@ const logger = require('morgan');
 const sassMiddleware = require('node-sass-middleware');
 const session = require('express-session');
 
-const orderController = require('./lib/orders/order.controller');
+const {router: orderRouter, controller: orderController} = require('./lib/orders');
 const uuid = require("uuid");
 
 
@@ -71,9 +71,7 @@ app.get('/', async (req, res) => {
     }
 });
 
-
-
-app.use('/orders', orderController);
+app.use('/orders', orderRouter);
 
 
 // catch 404 and forward to error handler
