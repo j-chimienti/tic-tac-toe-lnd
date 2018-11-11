@@ -1,4 +1,3 @@
-
 require('dotenv').load();
 const createError = require('http-errors');
 const express = require('express');
@@ -8,7 +7,9 @@ const logger = require('morgan');
 const sassMiddleware = require('node-sass-middleware');
 const session = require('express-session');
 
-const {router: orderRouter, controller: orderController} = require('./lib/orders');
+const orderRouter = require('./lib/orders/orders.router');
+
+const orderDao = require('./lib/orders/orders.dao');
 const uuid = require("uuid");
 
 
@@ -49,7 +50,7 @@ app.get('/', async (req, res) => {
     const {id} = req.session;
 
     // ttl
-    const order = await orderController.findByUserId(id).catch(err => {
+    const order = await orderDao.findByUserId(id).catch(err => {
 
         console.error(err);
 
