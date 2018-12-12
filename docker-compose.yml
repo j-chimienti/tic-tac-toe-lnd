@@ -1,15 +1,32 @@
 version: '3.1'
 ## ERROR
 services:
-  web:
-    networks:
-      - btcpal_default
-    build: .
-    restart: unless-stopped
+  db:
+    image: mongo
     env_file:
-      - .env
+    - .env
+    container_name: db
+    ports:
+    - "27017:27017"
+    restart: unless-stopped
+    #    volumes:
+    #      - /data/db:/data/db
+    networks:
+    - default
+    - btcstore
+  web:
+    container_name: webapp
+    build: .
+    depends_on:
+    - db
+    restart: unless-stopped
+    networks:
+    - default
+    - btcstore
+    env_file:
+    - .env
     ports:
     - "4321:4321"
 networks:
-  btcpal_default:
+  btcstore:
     driver: bridge

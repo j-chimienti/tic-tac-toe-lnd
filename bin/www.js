@@ -6,10 +6,10 @@
 require('dotenv').load();
 
 
-var app = require('./app');
+var app = require('../app');
 var http = require('http');
-const orderController = require("./lib/orders/orders.dao");
-const mongoConnect = require('./lib/mongo.connect').connect;
+const orderController = require("../lib/orders/orders.dao");
+const mongoConnect = require('../lib/mongo.connect').connect;
 var socketIO = require('socket.io');
 
 

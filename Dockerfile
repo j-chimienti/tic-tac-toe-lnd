@@ -1,7 +1,7 @@
 FROM node:8-alpine
-WORKDIR /app
+WORKDIR /usr/src/app
 COPY package*.json ./
-RUN npm i
+RUN npm install
 COPY . .
 EXPOSE 4321
 CMD node www.js
