@@ -15,14 +15,11 @@ services:
   web:
     container_name: webapp
     build: .
-    links:
-      - "db:db"
-      - "db:database"
     depends_on:
     - db
     restart: unless-stopped
     networks:
-    - generated_default
+    - ${BTCPAY_NETWORK}
     - lndstore
     env_file:
     - .env
@@ -30,6 +27,6 @@ services:
     - "${APP_PORT}:${APP_PORT}"
 networks:
   lndstore:
-  generated_default:
+  [${BTCPAY_NETWORK}]:
     external:
       name: generated_default

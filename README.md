@@ -17,12 +17,13 @@
 
 **How to Use**
 
+1. install btcpayserver
+1. in btcpayserver run `docker network ls` and save BTCPAY_NETWORK 
 1. Clone this repository:
 1. Make a copy of our .env.sample and rename it to .env:
 Update this file with your preferences.
 1. register A name with dns
   ![dns](assets/dns_setup.png)
-
 ```
 
 APP_PORT=4321
