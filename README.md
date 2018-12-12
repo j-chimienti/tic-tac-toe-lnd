@@ -10,7 +10,7 @@
 **Prerequisites:**
 
 1. [btcpayserver](https://github.com/btcpayserver/btcpayserver)
-1. domain name
+    - 1. domain name (this app will register subdomain store.example.com) 
 1. docker
 1. docker-compose
 
@@ -26,35 +26,32 @@ Update this file with your preferences.
   ![dns](assets/dns_setup.png)
 ```
 
-APP_PORT=4321
-APP_SECRET=super_secret_sauce
+APP_PORT=<4321>
+APP_SECRET=<>
 NODE_ENV=development
-MONGO_INITDB_ROOT_USERNAME=admin
-MONGO_INITDB_ROOT_PASSWORD=password
-DB_NAME="btcstore"
-MONGO_URI=mongodb://admin:password@db/admin
-
+MONGO_INITDB_ROOT_USERNAME=un
+VIRTUAL_HOST=store.example.com
+LETSENCRYPT_HOST=store.example.com
+MONGO_CONTAINER_NAME=db
+MONGO_INITDB_ROOT_PASSWORD=pw
+MONGO_URI=mongodb://un:pw@db/admin
+BTCPAY_HOST=<BTCPAYSERVER>
+BTCPAY_STORE_ID=<>
+CALLBACK_HOST=<>
+DB_NAME=<>
+LETSENCRYPT_EMAIL=<>
+BTCPAY_NETWORK=<>
 
 ```
-1. run / stop / restart
+
+ run 
 
 `bash run.sh`
+
+ stop 
+
 `bash stop.sh`
+
+restart
+
 `bash restart.sh`
-
-note: see [docker-compose.yml](docker-compose.yml)
-
-**html**
-
-```js
-views
-  -- index
-  -- order
-  -- error
-
-```
-
-
-**todo**
-
-1. automate process to dns creation
