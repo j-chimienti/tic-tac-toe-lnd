@@ -1,6 +1,11 @@
 # Lightning Charge API example
 
+**API charge Flow**
 
+1. Invoice sent to BTCPayServer
+1. redirect / callback urls back to app
+1. store order result in db
+1. do the things
 
 **requirements:**
 
@@ -13,11 +18,14 @@
 `docker-compose up`
 `docker-compose down`
 
-note: set volume in [docker-compose.yml](docker-compose.yml)
+note: see [docker-compose.yml](docker-compose.yml)
 
-**custom pages**
+**html**
 
-index
-order
+```js
+views
+  -- index
+  -- order
+  -- error
 
-edit [./views/index.hbs](views/index.hbs)
+```

@@ -105,7 +105,7 @@ async function main() {
     global.db = client.db(dbName);
 
     try {
-        await createUniqueIndex(global.db, 'id')
+        await createUniqueIndex(global.db.collection('orders'), 'id')
     } catch (e) {
         console.error(e)
     }
