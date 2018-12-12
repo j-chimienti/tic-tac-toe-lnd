@@ -8,8 +8,8 @@ services:
     ports:
     - "27017:27017"
     restart: unless-stopped
-    #    volumes:
-    #      - /data/db:/data/db
+#    volumes:
+#    - ./data/db:/data/db
     networks:
     - default
     - btcstore
@@ -25,7 +25,7 @@ services:
     env_file:
     - .env
     ports:
-    - "4321:4321"
+    - "${APP_PORT}:${APP_PORT}"
 networks:
   btcstore:
     driver: bridge

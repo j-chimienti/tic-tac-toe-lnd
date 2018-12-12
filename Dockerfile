@@ -3,5 +3,5 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
 COPY . .
-EXPOSE 4321
+EXPOSE ${APP_PORT}
 CMD node bin/www.js

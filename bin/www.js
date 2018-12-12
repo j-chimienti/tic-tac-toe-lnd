@@ -16,7 +16,7 @@ const mongoConnect = require('../lib/mongo/mongo.connect').connect;
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.APP_PORT || '4321');
 app.set('port', port);
 
 /**
@@ -94,7 +94,6 @@ function onListening() {
 }
 
 
-// Create a new MongoClient
 async function main() {
 
 
