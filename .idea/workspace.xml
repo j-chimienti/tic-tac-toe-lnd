@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="642341c1-e3a4-48da-8c76-9c0f26e667fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/restart.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mongo/mongo.createIndex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/www.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mongo.connect.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mongo/mongo.connect.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,14 +44,14 @@
           <entry key="html" value="3" />
           <entry key="js" value="73" />
           <entry key="json" value="9" />
-          <entry key="md" value="8" />
+          <entry key="md" value="9" />
           <entry key="mongo" value="2" />
           <entry key="mongo-env" value="3" />
           <entry key="sh" value="12" />
           <entry key="svg" value="1" />
           <entry key="ts" value="7" />
           <entry key="www" value="3" />
-          <entry key="yml" value="12" />
+          <entry key="yml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -68,11 +64,11 @@
           <entry key="Handlebars/Mustache" value="48" />
           <entry key="JSON" value="9" />
           <entry key="JavaScript" value="75" />
-          <entry key="Markdown" value="8" />
+          <entry key="Markdown" value="9" />
           <entry key="PLAIN_TEXT" value="17" />
           <entry key="SVG" value="1" />
           <entry key="TypeScript" value="7" />
-          <entry key="YAML" value="12" />
+          <entry key="YAML" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -84,29 +80,29 @@
           <entry key="gitignore" value="13" />
           <entry key="hbs" value="2017" />
           <entry key="html" value="24" />
-          <entry key="js" value="6922" />
+          <entry key="js" value="6942" />
           <entry key="json" value="37" />
-          <entry key="md" value="548" />
-          <entry key="sh" value="297" />
+          <entry key="md" value="780" />
+          <entry key="sh" value="301" />
           <entry key="ts" value="619" />
           <entry key="txt" value="14" />
-          <entry key="yml" value="743" />
+          <entry key="yml" value="744" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="387" />
-          <entry key="Bash" value="297" />
+          <entry key="Bash" value="301" />
           <entry key="CSS" value="374" />
           <entry key="Dockerfile" value="59" />
-          <entry key="HTML" value="24" />
+          <entry key="HTML" value="28" />
           <entry key="Handlebars/Mustache" value="2017" />
           <entry key="JSON" value="37" />
-          <entry key="JavaScript" value="6922" />
-          <entry key="Markdown" value="548" />
+          <entry key="JavaScript" value="6942" />
+          <entry key="Markdown" value="776" />
           <entry key="PLAIN_TEXT" value="74" />
           <entry key="TypeScript" value="619" />
-          <entry key="YAML" value="743" />
+          <entry key="YAML" value="744" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -122,22 +118,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/www.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="108" column="28" selection-start-line="108" selection-start-column="28" selection-end-line="108" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/restart.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <state relative-caret-position="322">
+              <caret line="107" column="60" selection-start-line="107" selection-start-column="60" selection-end-line="107" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="256">
+                <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/mongo/mongo.createIndex.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
@@ -219,7 +218,6 @@
         <option value="$PROJECT_DIR$/down.sh" />
         <option value="$PROJECT_DIR$/.env.mongo" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/bin/up-build.sh" />
         <option value="$PROJECT_DIR$/bin/up.sh" />
         <option value="$PROJECT_DIR$/Dockerfile" />
@@ -228,12 +226,13 @@
         <option value="$PROJECT_DIR$/views/order.hbs" />
         <option value="$PROJECT_DIR$/views/error.hbs" />
         <option value="$PROJECT_DIR$/views/index.hbs" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.env.example" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/bin/www.js" />
-        <option value="$PROJECT_DIR$/bin/restart.sh" />
         <option value="$PROJECT_DIR$/lib/mongo/mongo.createIndex.js" />
+        <option value="$PROJECT_DIR$/bin/restart.sh" />
+        <option value="$PROJECT_DIR$/bin/www.js" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -275,24 +274,7 @@
             <path>
               <item name="btc-store" type="b2602c69:ProjectViewProjectNode" />
               <item name="btc-store" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btc-store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btc-store" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btc-store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btc-store" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="mongo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btc-store" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btc-store" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="orders" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -407,7 +389,7 @@
       <workItem from="1541899823307" duration="4626000" />
       <workItem from="1541904683295" duration="2557000" />
       <workItem from="1544590764644" duration="241000" />
-      <workItem from="1544621021512" duration="9092000" />
+      <workItem from="1544621021512" duration="9621000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1544626511293</created>
@@ -427,13 +409,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75000000" />
+    <option name="totallyTimeSpent" value="75529000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="23" width="1231" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19680403" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19680403" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -451,7 +433,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Terminal" order="3" visible="true" weight="0.2783852" />
+      <window_info anchor="right" id="Terminal" order="3" weight="0.32043734" />
       <window_info anchor="right" id="Debug" order="4" weight="0.36333054" />
     </layout>
   </component>
@@ -472,16 +454,6 @@
           <url>file://$PROJECT_DIR$/bin/www.js</url>
           <line>11</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/bin/www.js</url>
-          <line>102</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/bin/www.js</url>
-          <line>100</line>
-          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/lib/mongo/mongo.connect.js</url>
@@ -626,27 +598,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="46">
-            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/mongo/mongo.connect.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -692,24 +647,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/www.js">
+    <entry file="file://$PROJECT_DIR$/lib/mongo/mongo.createIndex.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="108" column="28" selection-start-line="108" selection-start-column="28" selection-end-line="108" selection-end-column="28" />
+        <state relative-caret-position="92">
+          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/restart.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        <state relative-caret-position="69">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/mongo/mongo.createIndex.js">
+    <entry file="file://$PROJECT_DIR$/bin/www.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        <state relative-caret-position="322">
+          <caret line="107" column="60" selection-start-line="107" selection-start-column="60" selection-end-line="107" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="256">
+            <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
