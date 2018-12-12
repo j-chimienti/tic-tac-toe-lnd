@@ -27,6 +27,6 @@ services:
     - "${APP_PORT}:${APP_PORT}"
 networks:
   lndstore:
-  [${BTCPAY_NETWORK}]:
+  generated_default:
     external:
       name: generated_default
