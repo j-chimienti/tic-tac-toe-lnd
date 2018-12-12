@@ -4,15 +4,15 @@ services:
     image: mongo
     env_file:
     - .env
-    #container_name: db
+    container_name: db
     ports:
     - "27017:27017"
     restart: unless-stopped
       #    volumes:
       #    - ./data/db:/data/db
-      networks:
-      - btcstore
-      # - generated_default
+    networks:
+    - btcstore
+    # - generated_default
   web:
     container_name: webapp
     build: .
