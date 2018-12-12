@@ -5,12 +5,11 @@
  */
 require('dotenv').load();
 
-
+const dbName = process.env.DB_NAME || 'registration';
 var app = require('../app');
 var http = require('http');
-const orderController = require("../lib/orders/orders.dao");
-const mongoConnect = require('../lib/mongo.connect').connect;
-var socketIO = require('socket.io');
+const createUniqueIndex = require("../lib/mongo/mongo.createIndex").createUniqueIndex;
+const mongoConnect = require('../lib/mongo/mongo.connect').connect;
 
 
 /**
@@ -98,31 +97,21 @@ function onListening() {
 // Create a new MongoClient
 async function main() {
 
-    const dbName = 'registration';
+
 
     const client = await mongoConnect();
     console.log("Connected successfully to server");
 
     global.db = client.db(dbName);
 
-    console.log('port %' + port);
+    try {
+        await createUniqueIndex(global.db, 'id')
+    } catch (e) {
+        console.error(e)
+    }
     server.listen(port, '0.0.0.0');
     server.on('error', onError);
     server.on('listening', onListening);
-
-
-    var io = socketIO(server);
-
-    io.on('connection', (socket) => {
-
-        socket.on('GET_INVOICE_DATA', async id => {
-
-            const order = await orderController.getOrder(id);
-
-            socket.emit('INVOICE_DATA', order);
-        })
-
-    });
 
 
 }
