@@ -13,6 +13,9 @@ services:
   web:
     container_name: webapp
     build: .
+    links:
+      - "db:db"
+      - "db:database"
     depends_on:
     - db
     restart: unless-stopped
