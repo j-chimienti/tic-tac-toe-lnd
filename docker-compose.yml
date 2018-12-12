@@ -11,7 +11,7 @@ services:
     #    volumes:
     #    - ./data/db:/data/db
     networks:
-    - bridge
+    #- btcstore
     - generated_default
   web:
     container_name: webapp
@@ -20,12 +20,15 @@ services:
     - db
     restart: unless-stopped
     networks:
-    - bridge
+    #- btcstore
     - generated_default
     env_file:
     - .env
     ports:
     - "${APP_PORT}:${APP_PORT}"
-#networks:
-#  generated_default:
+networks:
+  generated_default:
+    external:
+      name: generated_default
+#  btcstore:
 #    driver: bridge
