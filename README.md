@@ -1,14 +1,17 @@
-# BTC PAY SERVER Example App
+# Lightning Charge API example
 
-Unique Id generated on page view
+1. set env vars (see .env.example)
+1. run docker container
 
-User redirected to page
+**docker**
 
-Upon confirmation post request sent to server
+`docker-compose up`
 
-socket to inform user
+`docker-compose down`
+
+note: set volume in [docker-compose.yml](docker-compose.yml)
 
 
-start
+**custom homepage**
 
-`npm start`
+edit [./views/index.hbs](views/index.hbs)

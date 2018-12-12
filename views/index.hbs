@@ -1,26 +1,26 @@
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <div class="my-3">
-    <div class="container text-center text-light">
-        <h1 class="text-center text-light page-title">
+    <div class="container text-center">
+        <h1 class="text-center my-4">
             Tic Tac Toe
             <small>
                 play for 1 hr after purchase
             </small>
         </h1>
-        <form method="POST" action="https://btcpal.online/apps/4SzvB5nnqAeM6mi8hMjxSeSGw3L3/pos">
+        <form method="POST" action="{{btcpay_host}}/apps/{{btcpay_store_id}}/pos">
 
 
-            <input readonly
+            <label for="orderId"></label>
+            <input class="form-control" readonly
                    id="orderId"
                    value="{{orderId}}"
-                   class="form-control"
                    hidden
                    name="orderId"
             />
-            <input type="hidden" name="orderId" value="{{orderId}}"/>
-            <input type="hidden" name="notificationUrl"
-                   value="http://74.207.232.172:4321/orders/{{orderId}}/{{userId}}"/>
-            <input type="hidden" name="redirectUrl" value="http://74.207.232.172:4321/orders/{{orderId}}"/>
+            <input class="form-control" type="hidden" name="orderId" value="{{orderId}}"/>
+            <input class="form-control" type="hidden" name="notificationUrl"
+                   value="{{callback_host}}/orders/{{orderId}}/{{userId}}"/>
+            <input class="form-control" type="hidden" name="redirectUrl" value="{{callback_host}}/orders/{{orderId}}"/>
             <button type="submit" name="choiceKey" value="game" class="btn btn-warning text-white btn-lg">
                 Pay 1 Satoshi
                 <img src="/btc.svg" alt="btc" width="40" height="40"/>
@@ -29,17 +29,16 @@
                 </span>
             </button>
         </form>
-
-
-        <div class="row ">
-            <iframe
-                    class="mx-auto"
-                    width="560" height="315"
-                    src="https://www.youtube.com/embed/ReUvW5Y7D3Y"
-                    frameborder="0"
-                    allow="autoplay; encrypted-media"
-                    allowfullscreen></iframe>
-        </div>
     </div>
 
 </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>

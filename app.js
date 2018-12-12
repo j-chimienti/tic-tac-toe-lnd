@@ -9,14 +9,25 @@ const session = require('express-session');
 
 const orderRouter = require('./lib/orders/orders.router');
 
-const orderDao = require('./lib/orders/orders.dao');
-const uuid = require("uuid");
-
+const {BTCPAY_HOST, BTCPAY_STORE_ID, CALLBACK_HOST} = process.env;
 
 const app = express();
+app.locals.btcpay_host = BTCPAY_HOST
+app.locals.btcpay_store_id = BTCPAY_STORE_ID
+app.locals.callback_url = CALLBACK_HOST
+
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
+
+// app.engine( 'hbs', hbs( {
+//     extname: 'hbs',
+//     //defaultLayout: 'main',
+//     //layoutsDir: __dirname + '/views/layouts/',
+//     partialsDir: __dirname + '/views/partials/'
+// } ) );
+
 app.set('view engine', 'hbs');
 
 const MongoStore = require('connect-mongo')(session);
@@ -44,58 +55,13 @@ app.use(sassMiddleware({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-
-app.get('/', async (req, res) => {
-
-    const {id} = req.session;
-
-    // ttl
-    const order = await orderDao.findByUserId(id).catch(err => {
-
-        console.error(err);
-
-        return false;
-    });
+app.get('/', (req, res) => res.redirect('/orders/homepage/check/status'))
 
 
-    if (order && order.status) {
-
-        res.sendFile(path.join(__dirname, 'public', 'ttt.html'));
-
-    } else {
-
-        const orderId = uuid.v1();
-        res.locals.userId = req.session.id;
-        res.locals.orderId = orderId;
-        res.render('index');
-
-    }
-});
 
 app.use('/orders', orderRouter);
 
-app.get('/orders/:id', async (req, res) => {
 
-    const {id} = req.params;
-
-    const userId = req.session.id;
-
-    const order = await orderDao.getOrder({id, userId}).catch(err => {
-
-        console.error(err);
-        return {status: false};
-    });
-
-    if (order && order.status === 'complete' && order.userId === userId) {
-
-        res.sendFile(path.join(__dirname, 'public', 'ttt.html'));
-
-    } else {
-
-        res.redirect('/');
-    }
-
-});
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
