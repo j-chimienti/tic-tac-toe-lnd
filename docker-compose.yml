@@ -12,7 +12,7 @@ services:
     #    - ./data/db:/data/db
     networks:
     #- btcstore
-    - generated_default
+    # - generated_default
   web:
     container_name: webapp
     build: .
