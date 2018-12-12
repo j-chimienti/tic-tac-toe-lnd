@@ -8,10 +8,10 @@ services:
     ports:
     - "27017:27017"
     restart: unless-stopped
-#    volumes:
-#    - ./data/db:/data/db
+    #    volumes:
+    #    - ./data/db:/data/db
     networks:
-    - default
+    - generated_default
     - btcstore
   web:
     container_name: webapp
@@ -20,7 +20,7 @@ services:
     - db
     restart: unless-stopped
     networks:
-    - default
+    - generated_default
     - btcstore
     env_file:
     - .env
