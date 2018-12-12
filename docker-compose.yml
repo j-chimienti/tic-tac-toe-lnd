@@ -11,6 +11,7 @@ services:
     #    volumes:
     #    - ./data/db:/data/db
     networks:
+    - bridge
     - generated_default
   web:
     container_name: webapp
@@ -19,11 +20,12 @@ services:
     - db
     restart: unless-stopped
     networks:
+    - bridge
     - generated_default
     env_file:
     - .env
     ports:
     - "${APP_PORT}:${APP_PORT}"
-networks:
-  generated_default:
-    driver: bridge
+#networks:
+#  generated_default:
+#    driver: bridge
