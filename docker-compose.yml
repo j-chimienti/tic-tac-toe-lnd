@@ -27,5 +27,5 @@ services:
     ports:
     - "${APP_PORT}:${APP_PORT}"
 networks:
-  btcstore:
+  generated_default:
     driver: bridge
