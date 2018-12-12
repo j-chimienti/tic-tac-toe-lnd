@@ -30,5 +30,5 @@ networks:
   generated_default:
     external:
       name: generated_default
-#  btcstore:
-#    driver: bridge
+  btcstore:
+    driver: bridge
