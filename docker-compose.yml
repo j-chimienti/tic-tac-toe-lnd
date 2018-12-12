@@ -19,7 +19,7 @@ services:
     - db
     restart: unless-stopped
     networks:
-    - ${BTCPAY_NETWORK}
+    - generated_default
     - lndstore
     env_file:
     - .env
