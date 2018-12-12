@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-docker-compose down
-docker-compose up --build
+bash down.sh
+bash up.sh

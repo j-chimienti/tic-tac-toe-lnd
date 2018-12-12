@@ -16,6 +16,7 @@ app.locals.btcpay_host = BTCPAY_HOST
 app.locals.btcpay_store_id = BTCPAY_STORE_ID
 app.locals.callback_url = CALLBACK_HOST
 
+app.local.title = 'Lighting STORE!'
 
 
 // view engine setup
