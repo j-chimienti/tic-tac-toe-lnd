@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="642341c1-e3a4-48da-8c76-9c0f26e667fe" name="Default Changelist" comment="" />
+    <list default="true" id="642341c1-e3a4-48da-8c76-9c0f26e667fe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -83,7 +85,7 @@
           <entry key="sh" value="342" />
           <entry key="ts" value="619" />
           <entry key="txt" value="14" />
-          <entry key="yml" value="913" />
+          <entry key="yml" value="954" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -99,7 +101,7 @@
           <entry key="Markdown" value="1084" />
           <entry key="PLAIN_TEXT" value="74" />
           <entry key="TypeScript" value="619" />
-          <entry key="YAML" value="913" />
+          <entry key="YAML" value="954" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -133,8 +135,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+            <state relative-caret-position="253">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -406,7 +408,7 @@
       <workItem from="1541904683295" duration="2557000" />
       <workItem from="1544590764644" duration="241000" />
       <workItem from="1544621021512" duration="11876000" />
-      <workItem from="1544638410382" duration="3677000" />
+      <workItem from="1544638410382" duration="3954000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose">
       <created>1544626511293</created>
@@ -426,10 +428,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81461000" />
+    <option name="totallyTimeSpent" value="81738000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="23" width="1231" height="777" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.20689656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -656,8 +659,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        <state relative-caret-position="253">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
         </state>
       </provider>
     </entry>

@@ -8,6 +8,8 @@ services:
     ports:
     - "27017:27017"
     restart: unless-stopped
+    networks:
+      - lndstore
     #    volumes:
     #    - ./data/db:/data/db
   web:
@@ -21,11 +23,13 @@ services:
     restart: unless-stopped
     networks:
     - generated_default
+    - lndstore
     env_file:
     - .env
     ports:
     - "${APP_PORT}:${APP_PORT}"
 networks:
+  lndstore:
   generated_default:
     external:
       name: generated_default
