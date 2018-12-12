@@ -8,11 +8,8 @@ services:
     ports:
     - "27017:27017"
     restart: unless-stopped
-      #    volumes:
-      #    - ./data/db:/data/db
-    networks:
-    - btcstore
-    # - generated_default
+    #    volumes:
+    #    - ./data/db:/data/db
   web:
     container_name: webapp
     build: .
@@ -30,5 +27,3 @@ networks:
   generated_default:
     external:
       name: generated_default
-  btcstore:
-    driver: bridge

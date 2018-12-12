@@ -52,3 +52,8 @@ views
   -- error
 
 ```
+
+
+**todo**
+
+1. automate process to dns creation
