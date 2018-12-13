@@ -17,8 +17,6 @@ services:
     build: .
     external_links:
       - db
-    depends_on:
-    - db
     restart: unless-stopped
     networks:
     - generated_default
