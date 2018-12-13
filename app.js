@@ -46,7 +46,7 @@ app.use(session({
     }
 }));
 
-app.use(logger());
+app.use(logger('combined'));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
