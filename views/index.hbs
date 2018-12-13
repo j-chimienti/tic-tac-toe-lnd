@@ -1,13 +1,18 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <div class="my-3">
     <div class="container text-center">
-       <h1>{{title}}</h1>
+       <h1>Lightning Pay to Play Game</h1>
 
-        <form method="POST" action="{{btcpay_host}}/apps/{{btcpay_store_id}}/pos">
+        <h4 style="border-left: 3px solid var(--info);">Description</h4>
+        <p>
+            Click the button, and you will be sent to invoice page.
+            Pay 1 satoshi to play tic tac toe
+        </p>
 
-
+        <form method="POST" action="https://{{btcpay_host}}/apps/{{btcpay_store_id}}/pos">
             <label for="orderId"></label>
-            <input class="form-control" readonly
+            <input class="form-control"
+                   readonly
                    id="orderId"
                    value="{{orderId}}"
                    hidden
@@ -18,11 +23,10 @@
                    value="{{callback_host}}/orders/{{orderId}}/{{userId}}"/>
             <input class="form-control" type="hidden" name="redirectUrl" value="{{callback_host}}/orders/{{orderId}}"/>
             <button type="submit" name="choiceKey" value="{{choiceKey}}" class="btn btn-warning text-white btn-lg">
-                Pay 1 Satoshi
-                <img src="/btc.svg" alt="btc" width="40" height="40"/>
                 <span role="img" class="pl-1">
                     ⚡
                 </span>
+                PAY TO PLAY
             </button>
         </form>
     </div>

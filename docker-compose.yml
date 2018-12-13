@@ -13,7 +13,6 @@ services:
     ports:
     - "${APP_PORT}:${APP_PORT}"
 networks:
-  tic_tac_toe:
   lightning-api-purchase_lndstore:
     external:
       name: lightning-api-purchase_lndstore
