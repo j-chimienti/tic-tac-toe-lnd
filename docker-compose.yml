@@ -15,8 +15,8 @@ services:
   ttt:
     container_name: tic-tac-toe
     build: .
-    links:
-      - "db:db"
+    external_links:
+      - db
     depends_on:
     - db
     restart: unless-stopped
