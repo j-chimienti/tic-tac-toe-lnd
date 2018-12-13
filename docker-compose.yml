@@ -1,32 +1,34 @@
 version: '3.1'
 services:
-  db:
-    image: mongo
-    env_file:
-    - .env
-    container_name: db
-    ports:
-    - "27017:27017"
-    restart: unless-stopped
-    networks:
-      - lndstore
-    #    volumes:
-    #    - ./data/db:/data/db
-  web:
-    container_name: webapp
+#  db:
+#    image: mongo
+#    env_file:
+#    - .env
+#    container_name: db
+#    ports:
+#    - "27017:27017"
+#    restart: unless-stopped
+#    networks:
+#      - lndstore
+#    #    volumes:
+#    #    - ./data/db:/data/db
+  ttt:
+    container_name: tic-tac-toe
     build: .
+    links:
+      - "db:db"
     depends_on:
     - db
     restart: unless-stopped
     networks:
     - generated_default
-    - lndstore
+    - tic_tac_toe
     env_file:
     - .env
     ports:
     - "${APP_PORT}:${APP_PORT}"
 networks:
-  lndstore:
+  tic_tac_toe:
   generated_default:
     external:
       name: generated_default
