@@ -106,6 +106,7 @@ async function main() {
     try {
         await createUniqueIndex(global.db.collection('orders'), 'id')
     } catch (e) {
+        console.error('error creating index')
         console.error(e)
     }
     server.listen(port, '0.0.0.0');
