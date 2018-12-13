@@ -34,7 +34,7 @@ app.set('view engine', 'hbs');
 
 const MongoStore = require('connect-mongo')(session);
 
-app.use(express.static(path.join(__dirname, 'build')));
+
 app.use(session({
     store: new MongoStore({url: process.env.MONGO_URI}),
     secret: process.env.APP_SECRET,
@@ -61,7 +61,10 @@ app.get('/', (req, res) => res.redirect('/orders/homepage/init'))
 
 app.use('/orders', orderRouter);
 
-
+app.use('/game', express.static(path.join(__dirname, 'build')));
+app.get('/game', (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'))
+});
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
