@@ -7,12 +7,16 @@ services:
     restart: always
     networks:
     - generated_default
+    - lightning-api-purchase_lndstore
     env_file:
     - .env
     ports:
     - "${APP_PORT}:${APP_PORT}"
 networks:
   tic_tac_toe:
+  lightning-api-purchase_lndstore:
+    external:
+      name: lightning-api-purchase_lndstore
   generated_default:
     external:
       name: generated_default
