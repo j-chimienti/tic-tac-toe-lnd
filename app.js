@@ -34,6 +34,7 @@ app.set('view engine', 'hbs');
 
 const MongoStore = require('connect-mongo')(session);
 
+app.use(express.static(path.join(__dirname, 'build')));
 app.use(session({
     store: new MongoStore({url: process.env.MONGO_URI}),
     secret: process.env.APP_SECRET,
@@ -55,11 +56,8 @@ app.use(cookieParser());
 //     indentedSyntax: true, // true = .sass and false = .scss
 //     sourceMap: true
 // }));
-app.use(express.static(path.join(__dirname, 'build')));
 
-app.get('/', (req, res) => res.redirect('/orders/homepage/check/status'))
-
-
+app.get('/', (req, res) => res.redirect('/orders/homepage/init'))
 
 app.use('/orders', orderRouter);
 
