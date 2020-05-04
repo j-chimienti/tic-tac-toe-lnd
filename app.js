@@ -14,7 +14,7 @@ const {BTCPAY_HOST, BTCPAY_STORE_ID, CALLBACK_HOST} = process.env;
 const app = express();
 app.locals.btcpay_host = BTCPAY_HOST
 app.locals.btcpay_store_id = BTCPAY_STORE_ID
-app.locals.callback_url = CALLBACK_HOST
+app.locals.callback_host = CALLBACK_HOST
 app.locals.choiceKey = process.env.choiceKey
 
 app.locals.title = 'Lighting STORE!'
@@ -46,7 +46,7 @@ app.use(session({
     }
 }));
 
-app.use(logger('combined'));
+app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
@@ -61,7 +61,8 @@ app.get('/', (req, res) => res.redirect('/orders/homepage/init'))
 
 app.use('/orders', orderRouter);
 
-app.use('/game', express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'build')));
+// fixme: ensure session exists before sending file
 app.get('/game', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'))
 });
